@@ -11,3 +11,6 @@ The design is implemented in 3 parts to provide better print quality with short 
 The cap has 4 small "pin" features that are designed to snap around the base where it begins tapering down in a cone shape toward the bayonet fitting.  The size and extension of these are parameters in the OpenSCAD file and can be adjusted to balance security vs ease of disassembly for reloading.  
 
 The height of the media (carbon) area is also parameteric if more/less is desired. 
+
+## Credits
+Design leaned heavily on OpenSCAD 3M Bayonet adapter by james_lan: https://www.thingiverse.com/thing:4246959
