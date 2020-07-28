@@ -12,5 +12,8 @@ The cap has 4 small "pin" features that are designed to snap around the base whe
 
 The height of the media (carbon) area is also parameteric if more/less is desired. 
 
+## Customizing
+Design implemented in OpenSCAD - Put all files in the same folder - most customization is in PDX_mask_dimensions.scad so that changes propogate to any affected parts.  
+
 ## Credits
 Design leaned heavily on OpenSCAD 3M Bayonet adapter by james_lan: https://www.thingiverse.com/thing:4246959
