@@ -4,7 +4,7 @@
 
 include <PDX_mask_dimensions.scad>
 
-cap_inner_radius = base_filter_outer_radius;
+cap_inner_radius = cap_fit_factor * base_filter_outer_radius;
 cap_outer_radius = cap_inner_radius + cap_wall_thickness;
 cap_height_min = base_filter_height;
 cap_height_total_inner = cap_height_min + cap_pin_dia;

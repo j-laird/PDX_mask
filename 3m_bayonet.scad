@@ -2,8 +2,8 @@
 // with minor tweaks by @jesselaird
 
 tolerance=0.5;
-attachment_od=30;
-attachment_height=10;
+attachment_od=36;
+attachment_height=6;
 bayonet_od=21.5+tolerance;
 bayonet_extra=2; //radius
 bayonet_under=2.25;

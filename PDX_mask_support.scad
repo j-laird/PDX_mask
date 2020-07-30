@@ -11,7 +11,12 @@ fin_width = 0.8;
 // calculated based on other design parameters:
 cone_top_radius = base_filter_inner_radius;
 cone_bottom_radius = bayonet_od/2+bayonet_extra+2 - base_wall_thickness;
-cone_height = base_cone_height;
+cone_height = base_cone_height-attachment_height;
+// from base cone design:
+base_mount_inner_radius = attachment_od/2;
+base_rib_corner_radius = ((base_filter_inner_radius - base_mount_inner_radius) * 
+                    (attachment_height / base_cone_height)
+                    + base_mount_inner_radius + 0.1);
 
 union(){
     // circular filter supports:
@@ -47,6 +52,6 @@ union(){
                 cube([fin_width,cone_top_radius * 2,cone_height],center=true);
             }
         }
-        cylinder(h=cone_height, r1=cone_top_radius, r2=cone_bottom_radius,center=true);
+        cylinder(h=cone_height, r1=cone_top_radius, r2=base_rib_corner_radius,center=true);
     }
 }
