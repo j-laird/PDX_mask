@@ -7,7 +7,7 @@ attachment_height=6;
 bayonet_od=21.5+tolerance;
 bayonet_extra=2; //radius
 bayonet_under=2.25;
-bayonet_width=7;
+bayonet_width=8;
 bayonet_height=attachment_height-bayonet_under;
 $fn=200;
 
@@ -33,7 +33,6 @@ difference(){
 	}
 }
 }
-
 
 //To use:
 // Put in same folder as 3m_bayonet.scad and in your file: 

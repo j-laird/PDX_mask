@@ -60,8 +60,19 @@ union(){
     // filter area:
     translate([0,0,30]){
         difference(){
+            // basic hollow cylinder:
             cylinder(h=base_filter_height,r=base_filter_outer_radius);
             cylinder(h=base_filter_height,r=base_filter_inner_radius);
+            // now we'll remove a grove on the outside, 2mm up from where cone meets the filter area
+            // - this forms a retention grove that interlocks a feature on the cap
+            translate([0,0,retention_groove_offset]){
+                difference(){
+                    cylinder(h=retention_groove_height,
+                             r=base_filter_outer_radius);
+                    cylinder(h=retention_groove_height,
+                             r=base_filter_outer_radius - retention_groove_depth); 
+                }
+            }
         }
     }
 }
