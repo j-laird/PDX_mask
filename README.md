@@ -16,13 +16,11 @@ Home-made respirator cartridges have plenty of safety concerns.  From the design
 Prototypes have been printed on a Prusa i3mk3 printer using PETG filament.  The design was optimized for print time, and takes advantage of the flexibility and durability of this material to snap together.  Total print time at 0.3mm layer height / draft quality is about 1h 45m per cartridge.  However:
 
 - Cap and support can be printed at 0.3mm for speed
-- Base prints best at 0.2mm.  My print time for this part was ~1.5h at 0.2mm/speed on Prusaslicer
+- Base prints good at 0.3mm now, but if you have poor surface, try 0.2mm. 
 
-*new in latest version - cap has cap_fit_factor to grow/shrink for best fit.  1.00 was too tight for me, 1.01 was too loose - and 1.005 was perfect.*
+*new in v2 and later - cap has cap_fit_factor to grow/shrink for best fit.  
 
 The design is implemented in 3 parts to provide better print quality with short print times.  A printed support is placed inside the bayonet base.  The user-side filter material will probably be cut and glued around the periphery, and the space is designed to support the use of activated carbon granules.  A second layer (environment side) can be glued to either the inside of the snap-on cap, or somehow glued to the top of the base.  Feedback welcome.
-
-The cap has 4 small "pin" features that are designed to snap around the base where it begins tapering down in a cone shape toward the bayonet fitting.  The size and extension of these are parameters in the OpenSCAD file and can be adjusted to balance security vs ease of disassembly for reloading.  
 
 The height of the media (carbon) area is also parameteric if more/less is desired. 
 
