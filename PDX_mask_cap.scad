@@ -59,9 +59,16 @@ module cap_relief_slots(){
         union(){
             for(rot_deg=[0:60:120]){
                 rotate([0,0,rot_deg]){
-                    translate([0,0,0]){
-                        cube([cap_wall_thickness,2*cap_outer_radius,cap_height_total_inner],center=true);
+                    translate([0,0,cap_thickness/2 + -1*cap_height_total_inner/2]){
+                        rotate([90,0,0]){
+                            cylinder(r=cap_wall_thickness,h=2*cap_outer_radius,center=true);
+                        }
                     }
+                    cube([cap_wall_thickness,
+                          2*cap_outer_radius,
+                          cap_height_total_inner],
+                          center=true);
+                    
                 }
             }
         }
